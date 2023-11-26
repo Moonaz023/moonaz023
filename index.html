@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moonaz023</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+   
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Md. Moonaz Rahman</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Md. Moonaz Rahman</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+
+    </nav>
+<section id="profile">
+    <div class="section_pic-container">
+        <img src="./assets/dpp.png" alt="moonaz">
+    </div>
+    <div class="section_text">
+        <p class="section_text-p1">Hello! I'm</p>
+        <h1 class="title">Md. Moonaz Rahman</h1>
+        <p class="section_text-p2">Full Stack Developer</p>
+        <div class="btn-container">
+            <button 
+            class="btn btn-cv" type="button"
+            onclick="window.open('./assets/CV.pdf')"
+            >Download CV
+            </button>
+            <button class="btn btn-contact_info" type="button" 
+            onclick="location.href='./#contact'"
+            >Contact info.
+            </button>
+        </div>
+        <div id="social_icon">
+            <img src="./assets/github.png" alt="github"
+            class="icon"
+            onclick="location.href='https://github.com/Moonaz023'">
+            <img src="./assets/linkedin.png" alt="linkedin"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/moonaz023/'">
+        </div>
+    </div>
+
+</section>
+
+<section id="about">
+    <p class="section_text-p1 ">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section_pic-container">
+            <img src="./assets/myspring.png" alt="spring_logo" class="about about_img">
+        </div>
+        <div class="about-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience-logo" class="icon">
+                    <h3>Experience</h3>
+                    <p>2+ years <br>Full Stack Developer</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="education-logo" class="icon">
+                    <h3>Education</h3>
+                    <p>B.Sc. in Computer Science & Engineering </p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p class="about-self">
+                    I am a Full Stack Developer with expertise in Spring Boot, HTML, CSS, JavaScript, Ajax, and Docker, I specialize in crafting solutions that seamlessly blend robustness with elegance. Beyond the
+                    confines of academia, my journey is marked by the successful completion of diverse projects, each a testament to my
+                    commitment to creating compelling user experiences through the harmonious integration of HTML, CSS, JS, and Spring Boot.
+                    <br>
+                    My expertise extends beyond web development, encompassing a solid foundation in algorithm design and a mastery of
+                    languages such as C and C++. Notably, I recently showcased my versatility in mobile application development by
+                    successfully delivering an Android app project using Flutter.
+                    <br>
+                    Driven by a relentless pursuit of excellence, I am not just a coder; I am a problem solver, an innovator, and a
+                    collaborative force. Eager to embark on new challenges, I am actively seeking opportunities and collaborations that will
+                    propel me further on this exciting journey, allowing me to contribute my skills to projects that make a meaningful
+                    impact.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow-logo" class="icon arrow" onclick="location.href='./#skill'">
+</section>
+<section id="skill">
+    <p class="section_text-p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="skill-details-container">
+        <div class="about-container">
+            <div class="details-container">
+                <h2 class="skill-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                    </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                        <div>
+                            <h3>Bootstrap</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article><article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                        <div>
+                            <h3>Ajax</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article><article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                        <div>
+                            <h3>Flutter</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="skill-sub-title">Backend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                        <div>
+                            <h3>Spring Boot</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                        <div>
+                            <h3>Java</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                        <div>
+                            <h3>PHP</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                        <div>
+                            <h3>MySQL</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                        <div>
+                            <h3>SQLite</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
+                        <div>
+                            <h3>Docker  </h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow-logo" class="icon arrow skill_arrow" onclick="location.href='./#projects'">
+</section>
+<section id="projects">
+<p class="section_text-p1">Browse My Recent</p>
+<h1 class="title">Projects</h1>
+<div class="skill-details-container">
+    <div class="about-container">
+    <div class="details-container color-container">
+        <div class="article-container">
+            <img src="./assets/uc.jpg" alt="project-img" class="project-img">
+        </div>
+        <h2 class="skill-sub-title project-title">Smart Administrators System</h2>
+        <div class="btn-container">
+            <button class="btn btn-color-2 project-btm" onclick="location.href='#'">
+                GitHub
+            </button>
+            <button class="btn btn-color-2 project-btm" onclick="location.href='#'">
+                Live Demo
+            </button>
+        </div>
+    </div>
+    <div class="details-container color-container">
+        <div class="article-container">
+            <img src="./assets/uc.jpg" alt="project-img" class="project-img">
+        </div>
+        <h2 class="skill-sub-title project-title">Care at Home</h2>
+        <div class="btn-container">
+            <button class="btn btn-color-2 project-btm" onclick="location.href='#'">
+                GitHub
+            </button>
+            <button class="btn btn-color-2 project-btm" onclick="location.href='#'">
+                Live Demo
+            </button>
+        </div>
+    </div>
+    <div class="details-container color-container">
+        <div class="article-container">
+            <img src="./assets/project3-.png" alt="project-img" class="project-img">
+        </div>
+        <h2 class="skill-sub-title project-title"><a href="https://lnkd.in/gzBm29ai">Expense Tracker</a></h2>
+        <div class="btn-container">
+            <button class="btn btn-color-2 project-btm" onclick="location.href='https://github.com/Moonaz023/Expense-Tracker-Android-App'">
+                GitHub
+            </button>
+            <button class="btn btn-color-2 project-btm" onclick="location.href='https://github.com/Moonaz023/Expense-Tracker-Android-App/raw/651040af18a0aac4f22a709a57302791e5a0ce42/app-armeabi-v7a-release.apk'">
+                Download
+            </button>
+            
+        </div>
+    </div>
+    
+</div></div>
+<img src="./assets/arrow.png" alt="arrow-logo" class="icon arrow project_arrow" onclick="location.href='./#contact'">
+</section>
+<section id="contact">
+    <p class="section_text-p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="email-icon" class="icon contact-icon email-icon">
+            <p><a href="mailto:moonaz.cse6.bu@gmail.com">moonaz.cse6.bu@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="linkedin-icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/moonaz023/">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+<footer>
+    <nav>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <p>Copyright © 2023 moonaz023. All Rights Reserved.</p>
+</footer>
+
+
+
+<script src="script.js"></script>    
+</body>
+</html>
