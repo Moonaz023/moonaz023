@@ -199,6 +199,25 @@ section{
     cursor: pointer;
     background-color: rgb(42, 165, 89);
 }
+/* Animation on Image *//*
+img.dp {
+    
+    animation: zoomIn 0.5s ease-in-out;
+   
+}*/
+/* Define the animation keyframes for zooming in *//*
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}*/
+
 /* About */
 #about{
     position: relative;
