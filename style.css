@@ -192,12 +192,12 @@ section{
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-    background-color: rgb(19, 95, 19);
+    background-color: rgb(42, 165, 89);
     border-color: black;
 }
 .btn:hover{
     cursor: pointer;
-    background-color: rgb(42, 165, 89);
+    background-color: rgb(19, 95, 19);
 }
 /* About */
 #about{
