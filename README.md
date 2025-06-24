@@ -1,5 +1,5 @@
 <h1 align="center">Hi There!</h1>
-<h3 align="center">"Welcome to my GitHub profile. I am a Junior Software Engineer with expertise in Java, Spring Boot, and microservices architecture, focused on delivering scalable, secure, and high-performance software solutions. My professional journey reflects a commitment to technical excellence, problem-solving, and continuous learning in software development and emerging technologies."</h3>
+<h3 align="justify">"Welcome to my GitHub profile. I am a Junior Software Engineer with expertise in Java, Spring Boot, and microservices architecture, focused on delivering scalable, secure, and high-performance software solutions. My professional journey reflects a commitment to technical excellence, problem-solving, and continuous learning in software development and emerging technologies."</h3>
 <img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif">
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=moonaz023&label=Profile%20views&color=0e75b6&style=flat" alt="moonaz023" /> </p>
 
@@ -9,7 +9,7 @@
 
 - 💬 Ask me about **Spring Boot Web development**
 
-- 📫 How to reach me **moonaz.cse6.bu@gmail.com**
+- 📫 How to reach me **mdmoonaz023@gmail.com**
 
 - 📄 Know about my experiences [https://drive.google.com/drive/u/0/folders/1P4hniPpCMrwj_Ycl424Gzt0VZqxTIUGT](https://drive.google.com/drive/u/0/folders/1P4hniPpCMrwj_Ycl424Gzt0VZqxTIUGT)
 
