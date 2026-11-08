@@ -3,297 +3,501 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moonaz023</title>
-    
+    <title>Moonaz023</title>
+    <meta name="description" content="Md. Moonaz Rahman, Junior Software Engineer (Java) at Naztech Inc. Builds Spring Boot microservices for SWIFT messaging, sanction screening and remittance automation.">
+    <meta name="theme-color" content="#4f46e5">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Md. Moonaz Rahman | Software Engineer (Java)">
+    <meta property="og:description" content="Spring Boot microservices for banking: SWIFT messaging, sanction screening and remittance automation.">
+    <meta property="og:url" content="https://moonaz023.github.io/moonaz023/">
+    <meta property="og:image" content="https://moonaz023.github.io/moonaz023/assets/dpp.png">
+
+    <!-- Tab icon: SVG for modern browsers, PNG fallback, and a home-screen icon for iOS -->
+    <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-   
+
+    <!-- Apply the saved theme before first paint to avoid a flash -->
+    <script>
+        document.documentElement.classList.add("js");
+        try {
+            const saved = localStorage.getItem("theme");
+            if (saved) document.documentElement.dataset.theme = saved;
+        } catch (e) {}
+    </script>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Md. Moonaz Rahman</div>
-        <div>
-            <ul class="nav-links">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main">
+            <a class="logo" href="#top">Moonaz<span>.</span></a>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skill">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero container" id="top">
+            <div class="hero-text">
+                <p class="badge"><span class="dot"></span>Currently at Naztech Inc</p>
+                <p class="eyebrow">Hello, I'm</p>
+                <h1>Md. Moonaz Rahman</h1>
+                <p class="hero-role">Junior Software Engineer <span>&middot; Java</span></p>
+                <p class="hero-lead">
+                    I build secure, scalable Spring Boot microservices for banking:
+                    automated SWIFT messaging, sanction screening and remittance processing.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="assets/Md_Moonaz_Rahman_resume.pdf" download>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+                        Download CV
+                    </a>
+                    <a class="btn btn-ghost" href="#contact">Get in touch</a>
+                </div>
+                <ul class="socials">
+                    <li><a href="https://github.com/Moonaz023" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/moonaz023/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                    </a></li>
+                    <li><a href="mailto:mdmoonaz023@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="hero-photo">
+                <img src="assets/dpp.png" alt="Portrait of Md. Moonaz Rahman" width="960" height="960" fetchpriority="high">
+            </div>
+        </section>
+
+        <!-- Stats strip -->
+        <section class="container" aria-label="Highlights">
+            <ul class="stats reveal">
+                <li><strong>3</strong><span>banks using xSMART</span></li>
+                <li><strong>500+</strong><span>algorithm problems solved</span></li>
+                <li><strong>2025</strong><span>joined Naztech Inc</span></li>
+                <li><strong>B.Sc.</strong><span>Computer Science &amp; Engineering</span></li>
+            </ul>
+        </section>
+
+        <!-- About -->
+        <section class="section container" id="about">
+            <div class="section-head reveal">
+                <p class="eyebrow">Get to know me</p>
+                <h2>About me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm a Java back-end engineer at <strong>Naztech Inc</strong>, where I build fintech software for
+                        Dhaka Bank, Bank Asia and National Bank. My work centres on Spring Boot microservices,
+                        Kafka messaging and Keycloak-secured APIs, plus the reporting and search tooling around them.
+                    </p>
+                    <p>
+                        I graduated in Computer Science &amp; Engineering from the University of Barishal. Solving 500+
+                        problems on Codeforces, UVa and Beecrowd taught me to care about performance and correctness,
+                        and that habit carries straight into production code.
+                    </p>
+                    <p class="interests-label">Outside work I'm interested in</p>
+                    <ul class="chips">
+                        <li>Artificial Intelligence</li>
+                        <li>Data Science</li>
+                        <li>Android Apps</li>
+                        <li>Research</li>
+                    </ul>
+                </div>
+                <div class="about-cards">
+                    <article class="card info-card reveal">
+                        <div class="info-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+                        <div>
+                            <h3>Experience</h3>
+                            <p>Junior Software Engineer, Java<br><span class="muted">Naztech Inc &middot; Apr 2025 &ndash; Present</span></p>
+                        </div>
+                    </article>
+                    <article class="card info-card reveal">
+                        <div class="info-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div>
+                        <div>
+                            <h3>Education</h3>
+                            <p>B.Sc. in Computer Science &amp; Engineering<br><span class="muted">University of Barishal &middot; Dec 2024</span></p>
+                        </div>
+                    </article>
+                    <article class="card info-card reveal">
+                        <div class="info-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                        <div>
+                            <h3>Leadership</h3>
+                            <p>Human Resource Coordinator<br><span class="muted">Startup Barishal &middot; 2021 &ndash; 2022</span></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section container" id="experience">
+            <div class="section-head reveal">
+                <p class="eyebrow">Where I've worked</p>
+                <h2>Experience</h2>
+            </div>
+
+            <ol class="timeline">
+                <li class="timeline-item reveal">
+                    <div class="timeline-meta">
+                        <span class="date">Apr 2025 &ndash; Present</span>
+                    </div>
+                    <div class="card timeline-card">
+                        <header class="job-head">
+                            <h3>Junior Software Engineer &middot; Java</h3>
+                            <p class="company">Naztech Inc</p>
+                        </header>
+
+                        <div class="job-projects">
+                            <div class="job-project">
+                                <h4>xSMART <span>Automated SWIFT messaging solution</span></h4>
+                                <ul>
+                                    <li>Developing xSMART, an automated SWIFT messaging solution for Dhaka Bank, Bank Asia and National Bank.</li>
+                                    <li>Built scalable Spring Boot services that handle the full message lifecycle, from creation to acknowledgement.</li>
+                                    <li>Generated dynamic audit reports with Jasper Reports, improving reporting efficiency.</li>
+                                </ul>
+                                <ul class="tags"><li>Spring Boot</li><li>Microservices</li><li>Jasper Reports</li><li>SWIFT</li></ul>
+                            </div>
+
+                            <div class="job-project">
+                                <h4>xSCREEN <span>Automated sanction screening system</span></h4>
+                                <ul>
+                                    <li>Worked on xSCREEN, a screening module that checks SWIFT messages for sanctioned or watch-listed entities for Dhaka Bank.</li>
+                                    <li>Improved search speed and performance by integrating Apache Lucene for indexing and screening lookups.</li>
+                                </ul>
+                                <ul class="tags"><li>Apache Lucene</li><li>Spring Boot</li><li>Sanction Screening</li></ul>
+                            </div>
+
+                            <div class="job-project">
+                                <h4>Remittance STP <span>Straight-through processing</span></h4>
+                                <ul>
+                                    <li>Automated cover matching for incoming remittance transactions for Dhaka Bank and Bank Asia.</li>
+                                    <li>Built automated tax and incentive calculation logic as part of the remittance workflow.</li>
+                                    <li>Implemented automated customer notifications for remittance status updates.</li>
+                                </ul>
+                                <ul class="tags"><li>Remittance</li><li>Automation</li><li>Notifications</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="timeline-item reveal">
+                    <div class="timeline-meta">
+                        <span class="date">May 2021 &ndash; Dec 2022</span>
+                    </div>
+                    <div class="card timeline-card">
+                        <header class="job-head">
+                            <h3>Human Resource Coordinator</h3>
+                            <p class="company">Startup Barishal</p>
+                        </header>
+                        <ul class="job-bullets">
+                            <li>Collaborated with the ICT Division, Bangladesh, to boost entrepreneurship in Barishal Division, advancing the vision of &ldquo;Digital Bangladesh&rdquo;.</li>
+                            <li>Ran technical awareness initiatives in the community to stimulate innovation and digital growth.</li>
+                            <li>Helped speed up digital opportunities in line with ICT Division goals.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Skills -->
+        <section class="section container" id="skills">
+            <div class="section-head reveal">
+                <p class="eyebrow">What I work with</p>
+                <h2>Skills</h2>
+            </div>
+
+            <!-- Logos: Devicon (MIT), pinned to v2.17.0 on jsDelivr -->
+            <ul class="stack-strip reveal" aria-label="Core stack">
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/java/java-original.svg" alt="" width="40" height="40" loading="lazy">Java</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/spring/spring-original.svg" alt="" width="40" height="40" loading="lazy">Spring Boot</li>
+                <li><img class="logo-mono" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/apachekafka/apachekafka-original.svg" alt="" width="40" height="40" loading="lazy">Kafka</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/postgresql/postgresql-original.svg" alt="" width="40" height="40" loading="lazy">PostgreSQL</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/mongodb/mongodb-original.svg" alt="" width="40" height="40" loading="lazy">MongoDB</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/redis/redis-original.svg" alt="" width="40" height="40" loading="lazy">Redis</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg" alt="" width="40" height="40" loading="lazy">Docker</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/react/react-original.svg" alt="" width="40" height="40" loading="lazy">React</li>
+            </ul>
+
+            <div class="skills-grid">
+                <article class="card skill-card reveal">
+                    <h3>Back-end</h3>
+                    <ul class="chips">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/java/java-original.svg" alt="" width="16" height="16" loading="lazy">Java</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/spring/spring-original.svg" alt="" width="16" height="16" loading="lazy">Spring Boot</li>
+                        <li>Microservices</li>
+                        <li><img class="logo-dim" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/mysql/mysql-original.svg" alt="" width="16" height="16" loading="lazy">MySQL</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/postgresql/postgresql-original.svg" alt="" width="16" height="16" loading="lazy">PostgreSQL</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/mongodb/mongodb-original.svg" alt="" width="16" height="16" loading="lazy">MongoDB</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/redis/redis-original.svg" alt="" width="16" height="16" loading="lazy">Redis</li>
+                    </ul>
+                </article>
+                <article class="card skill-card reveal">
+                    <h3>Security &amp; Auth</h3>
+                    <ul class="chips">
+                        <li>Keycloak</li>
+                        <li>JWT</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/oauth/oauth-original.svg" alt="" width="16" height="16" loading="lazy">OAuth2</li>
+                        <li>Role-based Access</li>
+                    </ul>
+                </article>
+                <article class="card skill-card reveal">
+                    <h3>Messaging &amp; Search</h3>
+                    <ul class="chips">
+                        <li><img class="logo-mono" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/apachekafka/apachekafka-original.svg" alt="" width="16" height="16" loading="lazy">Apache Kafka</li>
+                        <li>WebSocket</li>
+                        <li>Apache Lucene</li>
+                        <li>Jasper Reports</li>
+                    </ul>
+                </article>
+                <article class="card skill-card reveal">
+                    <h3>Front-end</h3>
+                    <ul class="chips">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/react/react-original.svg" alt="" width="16" height="16" loading="lazy">React</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/javascript/javascript-original.svg" alt="" width="16" height="16" loading="lazy">JavaScript</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/html5/html5-original.svg" alt="" width="16" height="16" loading="lazy">HTML</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/css3/css3-original.svg" alt="" width="16" height="16" loading="lazy">CSS</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/thymeleaf/thymeleaf-original.svg" alt="" width="16" height="16" loading="lazy">Thymeleaf</li>
+                    </ul>
+                </article>
+                <article class="card skill-card reveal">
+                    <h3>Tools</h3>
+                    <ul class="chips">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg" alt="" width="16" height="16" loading="lazy">Docker</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/git/git-original.svg" alt="" width="16" height="16" loading="lazy">Git</li>
+                        <li><img class="logo-mono" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/github/github-original.svg" alt="" width="16" height="16" loading="lazy">GitHub</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/chrome/chrome-original.svg" alt="" width="16" height="16" loading="lazy">Chrome DevTools</li>
+                    </ul>
+                </article>
+                <article class="card skill-card reveal">
+                    <h3>Fundamentals</h3>
+                    <ul class="chips">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/c/c-original.svg" alt="" width="16" height="16" loading="lazy">C</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/cplusplus/cplusplus-original.svg" alt="" width="16" height="16" loading="lazy">C++</li>
+                        <li>OOP</li>
+                        <li>Data Structures</li>
+                        <li>Algorithms</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </article>
+            </div>
+
+            <article class="card cp-card reveal">
+                <div>
+                    <h3>Competitive programming</h3>
+                    <p class="muted">500+ problems solved across online judges, plus algorithm implementations in C on GitHub.</p>
+                </div>
+                <ul class="cp-links">
+                    <li><a href="https://codeforces.com/profile/MooNaz" target="_blank" rel="noopener">Codeforces</a></li>
+                    <li><a href="https://uhunt.onlinejudge.org/id/1083621" target="_blank" rel="noopener">UVa Online Judge</a></li>
+                    <li><a href="https://judge.beecrowd.com/en/profile/312884" target="_blank" rel="noopener">Beecrowd</a></li>
+                    <li><a href="https://github.com/Moonaz023/algorithm" target="_blank" rel="noopener">Algorithms repo</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Projects -->
+        <section class="section container" id="projects">
+            <div class="section-head reveal">
+                <p class="eyebrow">Things I've built</p>
+                <h2>Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="card project-card reveal">
+                    <a class="project-media" href="https://youtu.be/2Bbav0eDb40" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+                        <img src="assets/projects/enterprisehub.jpg" alt="" width="1000" height="500" loading="lazy" decoding="async">
+                        <span class="media-badge"><svg viewBox="0 0 24 24" class="fill"><path d="m7 4 13 8-13 8z"/></svg>Demo</span>
+                    </a>
+                    <div class="project-body">
+                        <p class="project-kind">Web &middot; ERP</p>
+                        <h3>EnterpriseHub</h3>
+                        <p class="project-sub">Web-based ERP platform for small and medium companies</p>
+                        <ul class="project-points">
+                            <li>Covers inventory, production, sales, HR, CRM and accounting in one platform, including production-based companies.</li>
+                            <li>Built as microservices, with AI-driven procurement and production recommendations through the Google Gemini API.</li>
+                        </ul>
+                        <ul class="tags"><li>Microservices</li><li>Spring Boot</li><li>Thymeleaf</li><li>Docker</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Moonaz023/EnterpriseResourcePlanning" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Source code
+                            </a>
+                            <a href="https://youtu.be/2Bbav0eDb40" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z"/></svg>Watch demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <a class="project-media" href="https://youtu.be/larC2Qs7vOM" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+                        <img src="assets/projects/fastchat.jpg" alt="" width="1000" height="500" loading="lazy" decoding="async">
+                        <span class="media-badge"><svg viewBox="0 0 24 24" class="fill"><path d="m7 4 13 8-13 8z"/></svg>Demo</span>
+                    </a>
+                    <div class="project-body">
+                        <p class="project-kind">Real-time &middot; AI</p>
+                        <h3>FastChat</h3>
+                        <p class="project-sub">WebSocket-based real-time chat with AI and OAuth2</p>
+                        <ul class="project-points">
+                            <li>Real-time chat over WebSocket with online presence and low-latency messaging.</li>
+                            <li>Built-in &ldquo;Ask Gemini&rdquo; assistant for context-aware AI conversations alongside user-to-user chat.</li>
+                            <li>Secure OAuth2 login with Google, GitHub and LinkedIn, backed by PostgreSQL and MongoDB.</li>
+                        </ul>
+                        <ul class="tags"><li>Spring Boot</li><li>WebSocket</li><li>OAuth2</li><li>Gemini</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Moonaz023/FAST_CHAT/tree/dev" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Source code
+                            </a>
+                            <a href="https://youtu.be/larC2Qs7vOM" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z"/></svg>Watch demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <a class="project-media project-cover" href="https://github.com/Moonaz023/SmartAdministratorsSystem" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+                        <span class="cover-icon"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+                        <span class="cover-tags"><span>Student records</span><span>QR tracking</span><span>Testimonials</span></span>
+                    </a>
+                    <div class="project-body">
+                        <p class="project-kind">Web &middot; Admin</p>
+                        <h3>Smart Administrators System</h3>
+                        <p class="project-sub">Admin platform for university departments</p>
+                        <ul class="project-points">
+                            <li>Manages student records, academic details, equipment and notices, secured with Spring Security.</li>
+                            <li>Generates formatted student testimonials and QR codes for equipment tracking.</li>
+                        </ul>
+                        <ul class="tags"><li>Spring Boot</li><li>PostgreSQL</li><li>AJAX</li><li>Docker</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Moonaz023/SmartAdministratorsSystem" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Source code
+                            </a>
+                            <a href="https://smartadministratorssystem.onrender.com/" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>Live site
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <a class="project-media" href="https://github.com/Moonaz023/Expense-Tracker-Android-App" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+                        <img src="assets/projects/expense-tracker.jpg" alt="" width="688" height="344" loading="lazy" decoding="async">
+                    </a>
+                    <div class="project-body">
+                        <p class="project-kind">Mobile &middot; Android</p>
+                        <h3>Expense Tracker</h3>
+                        <p class="project-sub">Android app for tracking personal spending</p>
+                        <ul class="project-points">
+                            <li>Cross-platform mobile app built with Flutter, storing data locally in SQLite.</li>
+                        </ul>
+                        <ul class="tags"><li>Flutter</li><li>Dart</li><li>SQLite</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Moonaz023/Expense-Tracker-Android-App" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Source code
+                            </a>
+                            <a href="https://github.com/Moonaz023/Expense-Tracker-Android-App/raw/651040af18a0aac4f22a709a57302791e5a0ce42/app-armeabi-v7a-release.apk">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download APK
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section container" id="contact">
+            <div class="section-head reveal">
+                <p class="eyebrow">Get in touch</p>
+                <h2>Contact</h2>
+            </div>
+
+            <div class="card contact-panel reveal">
+                <div class="contact-intro">
+                    <h3>Let's build something together</h3>
+                    <p>Have a role, a project or a question? My inbox is open, and I'd be glad to hear from you.</p>
+                    <div class="contact-actions">
+                        <a class="btn btn-primary" href="mailto:mdmoonaz023@gmail.com">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                            Send an email
+                        </a>
+                        <a class="btn btn-ghost" href="assets/Md_Moonaz_Rahman_resume.pdf" download>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="contact-list">
+                    <li>
+                        <a href="mailto:mdmoonaz023@gmail.com">
+                            <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+                            <span class="contact-text"><small>Email</small>mdmoonaz023@gmail.com</span>
+                            <svg class="contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/moonaz023/" target="_blank" rel="noopener">
+                            <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span>
+                            <span class="contact-text"><small>LinkedIn</small>linkedin.com/in/moonaz023</span>
+                            <svg class="contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Moonaz023" target="_blank" rel="noopener">
+                            <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></span>
+                            <span class="contact-text"><small>GitHub</small>github.com/Moonaz023</span>
+                            <svg class="contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2026</span> Md. Moonaz Rahman</p>
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+    </footer>
 
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Md. Moonaz Rahman</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-
-    </nav>
-<section id="profile">
-    <div class="section_pic-container">
-        <img class="dp" src="./assets/dpp.png" alt="moonaz">
-    </div>
-    <div class="section_text">
-        <p class="section_text-p1">Hello! I'm</p>
-        <h1 class="title">Md. Moonaz Rahman</h1>
-        <p class="section_text-p2">Full Stack Developer</p>
-        <div class="btn-container">
-            <button 
-            class="btn btn-cv" type="button"
-            onclick="window.open('./assets/my_CV.pdf')"
-            >Download CV
-            </button>
-            <button class="btn btn-contact_info" type="button" 
-            onclick="location.href='./#contact'"
-            >Contact info.
-            </button>
-        </div>
-        <div id="social_icon">
-            <img src="./assets/github.png" alt="github"
-            class="icon"
-            onclick="location.href='https://github.com/Moonaz023'">
-            <img src="./assets/linkedin.png" alt="linkedin"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/moonaz023/'">
-        </div>
-    </div>
-
-</section>
-
-<section id="about">
-    <p class="section_text-p1 ">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-        <div class="section_pic-container">
-            <img src="./assets/myspring.png" alt="spring_logo" class="about about_img">
-        </div>
-        <div class="about-details-container">
-            <div class="about-container">
-                <div class="details-container">
-                    <img src="./assets/experience.png" alt="experience-logo" class="icon">
-                    <h3>Experience</h3>
-                    <p>2+ years <br>Full Stack Developer</p>
-                </div>
-                <div class="details-container">
-                    <img src="./assets/education.png" alt="education-logo" class="icon">
-                    <h3>Education</h3>
-                    <p>B.Sc. in Computer Science & Engineering </p>
-                </div>
-            </div>
-            <div class="text-container">
-                <p class="about-self">
-                    I am a Full Stack Developer with expertise in Spring Boot, HTML, CSS, JavaScript, Ajax, and Docker, I specialize in crafting solutions that seamlessly blend robustness with elegance. Beyond the
-                    confines of academia, my journey is marked by the successful completion of diverse projects, each a testament to my
-                    commitment to creating compelling user experiences through the harmonious integration of HTML, CSS, JS, and Spring Boot.
-                    <br>
-                    My expertise extends beyond web development, encompassing a solid foundation in algorithm design and a mastery of
-                    languages such as C and C++. Notably, I recently showcased my versatility in mobile application development by
-                    successfully delivering an Android app project using Flutter.
-                    <br>
-                    Driven by a relentless pursuit of excellence, I am not just a coder; I am a problem solver, an innovator, and a
-                    collaborative force. Eager to embark on new challenges, I am actively seeking opportunities and collaborations that will
-                    propel me further on this exciting journey, allowing me to contribute my skills to projects that make a meaningful
-                    impact.
-                </p>
-            </div>
-
-        </div>
-    </div>
-    <img src="./assets/arrow.png" alt="arrow-logo" class="icon arrow" onclick="location.href='./#skill'">
-</section>
-<section id="skill">
-    <p class="section_text-p1">Explore My</p>
-    <h1 class="title">Skills</h1>
-    <div class="skill-details-container">
-        <div class="about-container">
-            <div class="details-container">
-                <h2 class="skill-sub-title">Frontend Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                    <div>
-                        <h3>HTML</h3>
-                        <p>Experienced</p>
-                    </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                        <div>
-                            <h3>Bootstrap</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                        <div>
-                            <h3>JavaScript</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article><article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                        <div>
-                            <h3>Ajax</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article><article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                        <div>
-                            <h3>Flutter</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="details-container">
-                <h2 class="skill-sub-title">Backend Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                        <div>
-                            <h3>Spring Boot</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                        <div>
-                            <h3>Java</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                        <div>
-                            <h3>PHP</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                        <div>
-                            <h3>MySQL</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                        <div>
-                            <h3>SQLite</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="checkmark-logo" class="icon">
-                        <div>
-                            <h3>Docker  </h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </div>
-    <img src="./assets/arrow.png" alt="arrow-logo" class="icon arrow skill_arrow" onclick="location.href='./#projects'">
-</section>
-<section id="projects">
-<p class="section_text-p1">Browse My Recent</p>
-<h1 class="title">Projects</h1>
-<div class="skill-details-container">
-    <div class="about-container">
-    <div class="details-container color-container">
-        <div class="article-container">
-            <img src="./assets/sas.jpeg" alt="project-img" class="project-img">
-        </div>
-        <h2 class="skill-sub-title project-title">Smart Administrators System</h2>
-        <div class="btn-container">
-            <button class="btn btn-color-2 project-btm" onclick="location.href='https://github.com/Moonaz023/SmartAdministratorsSystem'">
-                GitHub
-            </button>
-            <button class="btn btn-color-2 project-btm" onclick="location.href='https://smartadministratorssystem.onrender.com/'">
-                Live Demo
-            </button>
-        </div>
-    </div>
-    <div class="details-container color-container">
-        <div class="article-container">
-            <img src="./assets/uc.jpg" alt="project-img" class="project-img">
-        </div>
-        <h2 class="skill-sub-title project-title">Care at Home</h2>
-        <div class="btn-container">
-            <button class="btn btn-color-2 project-btm" onclick="location.href='#'">
-                GitHub
-            </button>
-            <button class="btn btn-color-2 project-btm" onclick="location.href='#'">
-                Live Demo
-            </button>
-        </div>
-    </div>
-    <div class="details-container color-container">
-        <div class="article-container">
-            <img src="./assets/project3-.png" alt="project-img" class="project-img">
-        </div>
-        <h2 class="skill-sub-title project-title"><a href="https://lnkd.in/gzBm29ai">Expense Tracker</a></h2>
-        <div class="btn-container">
-            <button class="btn btn-color-2 project-btm" onclick="location.href='https://github.com/Moonaz023/Expense-Tracker-Android-App'">
-                GitHub
-            </button>
-            <button class="btn btn-color-2 project-btm" onclick="location.href='https://github.com/Moonaz023/Expense-Tracker-Android-App/raw/651040af18a0aac4f22a709a57302791e5a0ce42/app-armeabi-v7a-release.apk'">
-                Download
-            </button>
-            
-        </div>
-    </div>
-    
-</div></div>
-<img src="./assets/arrow.png" alt="arrow-logo" class="icon arrow project_arrow" onclick="location.href='./#contact'">
-</section>
-<section id="contact">
-    <p class="section_text-p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-            <img src="./assets/email.png" alt="email-icon" class="icon contact-icon email-icon">
-            <p><a href="mailto:moonaz.cse6.bu@gmail.com">moonaz.cse6.bu@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-            <img src="./assets/linkedin.png" alt="linkedin-icon" class="icon contact-icon">
-            <p><a href="https://www.linkedin.com/in/moonaz023/">LinkedIn</a></p>
-        </div>
-    </div>
-</section>
-<footer>
-    <nav>
-    <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-    </nav>
-    <p>Copyright © 2023 moonaz023. All Rights Reserved.</p>
-</footer>
-
-
-
-<script src="script.js"></script>    
+    <script src="script.js"></script>
 </body>
 </html>
